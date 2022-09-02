@@ -1,0 +1,44 @@
+@import "./variables.scss";
+
+.pagination {
+  display: flex;
+  column-gap: 20px;
+
+  @include mobile {
+    column-gap: 10px;
+  }
+
+  &-button {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid;
+    box-sizing: border-box;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      background: #fddcc4;
+      border: 2px solid #fddcc4;
+    }
+
+    @include fontsGeorgia();
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    border-color: #f1cdb3;
+    color: #292929;
+
+    &__disabled {
+      border-color: #cdcdcd;
+      color: #cdcdcd;
+      cursor: not-allowed;
+
+      pointer-events: none;
+    }
+
+    &__active {
+      background-color: #f1cdb3;
+    }
+  }
+}

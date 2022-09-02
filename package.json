@@ -1,0 +1,17 @@
+{
+  "name": "shelter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass ./pages/styles/main.scss ./public/main.css & sass ./pages/styles/pets.scss ./public/pets.css & sass ./pages/styles/hamburger.scss ./public/hamburger.css & sass ./pages/styles/menu.scss ./public/menu.css & sass ./pages/styles/modal.scss ./public/modal.css",
+    "start": "nodemon --watch . -e js,html,scss --exec \"npm run build\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15",
+    "sass": "^1.50.0"
+  }
+}

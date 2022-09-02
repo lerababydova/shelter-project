@@ -1,0 +1,27 @@
+.hamburger {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .hamburger {
+    display: block;
+    z-index: 1;
+    margin-left: 10px;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .line {
+    width: 30px;
+    height: 2px;
+    background-color: #f1cdb3;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}
+/*# sourceMappingURL=hamburger.css.map */

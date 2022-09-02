@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/main.css" />
+    <link rel="stylesheet" href="./public/pets.css" />
+    <link rel="stylesheet" href="./public/hamburger.css" />
+    <link rel="stylesheet" href="./public/menu.css" />
+    <link rel="stylesheet" href="./public/modal.css" />
+    <script src="./pages/main/initPagination.js"></script>
+    <script src="./pages/main/generatePets.js"></script>
+    <script src="./pages/main/index.js"></script>
+    <script src="./pages/main/modal.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header container">
+        <nav class="navigation">
+          <div class="logo">
+            <a href="./index.html" class="title">Cozy House</a>
+            <p class="subtitle">Shelter for pets in Boston</p>
+          </div>
+          <div class="header-right-side">
+            <div class="hamburger" id="hamburger-menu">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-item-link" href="./index.html"
+                  >About the shelter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-item-link active" href="#">Our pets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item-link" href="./index.html#help"
+                  >Help the shelter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-item-link" href="#contacts">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <section class="pets">
+          <div class="pets-wrapper">
+            <h1 class="pets-heading">
+              <pre>Our friends who</pre>
+              are looking for a house
+            </h1>
+            <div class="pets-slider"></div>
+            <div class="pagination">
+              <button
+                id="first-page"
+                class="pagination-button pagination-button__disabled"
+              >
+                <<
+              </button>
+              <button
+                id="previous-page"
+                class="pagination-button pagination-button__disabled"
+              >
+                <</button
+              ><button class="pagination-button pagination-button__active">
+                1</button
+              ><button id="next-page" class="pagination-button">></button
+              ><button id="last-page" class="pagination-button">>></button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="contacts">
+        <div class="footer-wrapper">
+          <div class="footer-wrapper__connections">
+            <div class="footer-section__contacts">
+              <h3 class="footer-title">For questions and suggestions</h3>
+              <div class="footer-contacts">
+                <img
+                  class="footer-icon"
+                  src="./assets/icons/mail.svg"
+                  alt="email-icon"
+                />
+                <a class="mail-link" href="mailto:email@shelter.com"
+                  >email@shelter.com</a
+                >
+              </div>
+              <div class="footer-contacts">
+                <img
+                  class="footer-icon"
+                  src="./assets/icons/phone.svg"
+                  alt="phone-icon"
+                />
+                <a class="phone-link" href="tel:+13 674 567 75 54"
+                  >+13 674 567 75 54</a
+                >
+              </div>
+            </div>
+            <div class="footer-section__address">
+              <h3 class="footer-title">We are waiting for your visit</h3>
+              <div class="footer-contacts">
+                <img
+                  class="footer-icon"
+                  src="./assets/icons/icon-marker.svg"
+                  alt="loction-icon"
+                />
+                <a
+                  class="address-link"
+                  target="_blank"
+                  href="https://goo.gl/maps/1hCkeLAqftVL2EDo7"
+                  >1 Central Street, Boston (entrance from the store)</a
+                >
+              </div>
+              <div class="footer-contacts">
+                <img
+                  class="footer-icon"
+                  src="./assets/icons/icon-marker.svg"
+                  alt="loction-icon"
+                />
+                <a
+                  class="address-link"
+                  target="_blank"
+                  href="https://goo.gl/maps/vmYnyLBmkMctygdc6"
+                  >18 South Park, London
+                </a>
+              </div>
+            </div>
+          </div>
+          <img
+            class="footer-img"
+            src="./assets/images/footer-puppy.png"
+            alt="footer-puppy"
+          />
+        </div>
+      </footer>
+      <div class="menu-shadow"></div>
+      <div class="menu light">
+        <div class="logo">
+          <a class="title" href="./index.html">Cozy House</a>
+          <p class="subtitle">Shelter for pets in Boston</p>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-item-link light" href="./index.html#about"
+              >About the shelter</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link active light" href="./our-pets.html"
+              >Our pets</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link light" href="./index.html#help"
+              >Help the shelter</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-link light" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="modal hidden">
+        <button class="modal-close">&times;</button>
+        <img class="modal-img" src="" alt="" />
+        <div class="modal-text-block">
+          <p class="modal-pet-name"></p>
+          <div class="modal-pets-types">
+            <span class="modal-pet-type"></span>
+            <span class="modal-pet-breed"></span>
+          </div>
+          <p class="modal-pet-description"></p>
+          <ul class="modal-pets-values">
+            <li class="pet-age">
+              <strong>Age: </strong><span class="pet-age-number"></span>
+            </li>
+            <li class="pet-inoculations">
+              <strong>Inoculations: </strong
+              ><span class="pet-inocalutions-type"></span>
+            </li>
+            <li class="pet-diseases">
+              <strong>Diseases: </strong
+              ><span class="pet-diseases-value"></span>
+            </li>
+            <li class="pet-parasites">
+              <strong>Parasites: </strong>
+              <span class="pet-parasites-value"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+    <template>
+      <div class="pets-slider-card" data-pet="Katrine">
+        <img
+          class="pet-img"
+          src="./assets/images/pets-katrine.png"
+          alt="cat-katrine"
+        />
+        <p class="pet-name">Katrine</p>
+        <button class="primary-button-pets">Learn more</button>
+      </div>
+    </template>
+  </body>
+</html>

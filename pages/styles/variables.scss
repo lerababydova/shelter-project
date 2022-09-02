@@ -1,0 +1,34 @@
+$primary-color: #f1cdb3;
+$text-color-white: #ffffff;
+$color-links: #cdcdcd;
+$background-color: #292929;
+
+$container-width: 1280px;
+
+$large: 1279px;
+$medium: 767px;
+$small: 320px;
+
+@mixin fontsGeorgia() {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin fontsArial() {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin tablet {
+  @media (max-width: #{$large}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$small}) and (max-width: #{$medium}) {
+    @content;
+  }
+}

@@ -1,0 +1,50 @@
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .pagination {
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+}
+
+.pagination-button {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  border-color: #f1cdb3;
+  color: #292929;
+}
+
+.pagination-button:hover {
+  background: #fddcc4;
+  border: 2px solid #fddcc4;
+}
+
+.pagination-button__disabled {
+  border-color: #cdcdcd;
+  color: #cdcdcd;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.pagination-button__active {
+  background-color: #f1cdb3;
+}
+/*# sourceMappingURL=pagination.css.map */
